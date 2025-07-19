@@ -1,0 +1,55 @@
+% !TEX root = reichenbach_explanation.tex
+
+%If bodies did not behave like $l$ in the relativistic sense, but like $L$ in the classical sense, there would be ne the Einstein contraction that $l$ is a rigid rod.
+
+%
+
+
+%Thus, the relativistic length of a moving rod from the rest frame is $\lK{}{'}$; the relativistic length of a stationary rod measured in the moving system is $\lK{'}{}$:
+%\todo{The notation serves to highlight the relational nature of the notion of length}
+
+%\begin{equation*}
+%\lK{\notateol{'}{0.5}{\texts{measured in the moving frame}}}{\notateul{\textcolor{white}{'}}{0.5}{\texts{at rest in the rest frame}}} \quad \quad \LK{\notateor{\textcolor{white}{'}}{0.5}{\texts{measured in the rest frame}}}{\notateur{'}{0.5}{\texts{at rest in the moving frame}}} 
+%\end{equation*}
+%
+
+
+In order to provide a proof of this claim, Reichenbach resorts to the somewhat idiosyncratic notation introduced in his \citeyear{Reichenbach1924} monograph. He labels $l$ a rod following the Lorentz–Einstein theory, and $L$ one with classical behavior. $K$ and $K'$ are resp.\ the stationary and moving systems. Then he uses index notation where the upper index $^{K}$ marks the frame in which the rod is measured, the lower the frame in which the rod is at rest $_{K}$. In both the classical and Lorentz–Einstein theories, the lengths of unit rods in the rest frame $K$ are equal, or $\lK{}{} = \LK{}{} = 1$. The difference emerges when one considers the length of the rod in the system in motion $K'$:
+
+\begin{itemize}
+\item \emph{classical theory}:  \hide{the rest length of the rod as measured from the moving system is equal to the rest length in the rest frame $\LK{'}{'}=\LK{}{}$
+%
+%\footnoteh{In classical mechanics $x' = x - vt$, then at the time $t = 0$, when $K$ and $K'$ coincide, we have $vt = 0$, and thus $x = x'$}
+%
+,} the rod has a unique length, regardless of motion:
+
+\begin{equation}\label{eq:CT}
+\frac{\LK{}{}}{\LK{'}{'}} = \frac{1}{1} \,\,\ \text{no contraction}
+\end{equation}
+%
+\item \emph{Lorentz theory}: the length of the moving rod in the moving system $K'$, is \textit{contracted} \hide{$\lK{'}{'}<\LK{'}{'}$ by a factor \kappafactor} with respect to the length that it would have in the classical theory in the same frame $K'$:
+
+\begin{equation}\label{eq:LT}
+\frac{\lK{'}{'}}{\LK{'}{'}}= \frac{\kappafactor}{1} \,\,\ \text{Lorentz contraction}
+\end{equation}
+
+\item \emph{Einstein theory}:  the length of the moving rod measured in the rest system $K$ is contracted \hide{$\lK{}{'}<\lK{'}{'}$, by a factor \kappafactor} with respect to the length of the moving rod measured in the moving system system $K'$:
+
+\begin{equation}\label{eq:ET}
+\frac{\lK{}{'}}{\lK{'}{'}} =\frac{\kappafactor}{1}  \,\,\ \text{Einstein contraction}
+\end{equation}
+%
+\end{itemize}
+%
+and viceversa\footnoteh{The length of the rest rod measured in the moving system $K'$ is contracted $\lK{'}{}<\lK{}{}$, by a factor \kappafactor with respect to the length of the moving rod measured in the moving system system $K'$: $\frac{\lK{'}{}}{\lK{}{}} =\frac{\kappafactor}{1}$.}. Reichenbach aims to prove that the fact that Lorentz contraction and Einstein contraction amounts to the same factor \kappafactor, is the consequence of the linearity of the Lorentz transformations. His proof runs as follows. According to classical theory we have $\LK{'}{}=\LK{}{}$, and since $\lK{}{}=\LK{}{}$ we obtain $\LK{}{'}=\lK{}{}$. Relation \cref{eq:ET} therefore becomes
+
+\begin{equation}\label{eq:ETCT}
+\frac{\LK{}{'}}{\lK{}{'}} = \kappafactor
+\end{equation}
+%
+Because of the linearity of the transformation ratio \cref{eq:ETCT} is the same as ratio \cref{eq:LT}, which means that \cref{eq:ET} is also the same as ratio \cref{eq:LT}: the ratio is the same in all case and in particular is equal to \kappafactor.  However, Reichenbach insists that there is the deep \emph{conceptual difference} between the two contractions despite the their coincidental \emph{numerical equality} \rc{45f.}{189f.}.
+
+
+
+
+%Indeed, shows that one can imagine cases in which in which there is no Lorentz contraction but an Einstein contraction\footnote{With not Lorentz contraction; the Einstein contraction from $K'$ to $K$ would also disappear. However, in the classical theory \cop{we might define the simultaneity in $K^{\prime}$ according to Einstein's convention, setting $\epsilon=\frac{1}{2}$, the inverse comparison from $K$ to $K^{\prime}$ will show the Einstein contraction}. The magnitude of which is the square of that of the Lorentz-Einstein contraction\todo{why?}.} and viceversa\todo{improve}.

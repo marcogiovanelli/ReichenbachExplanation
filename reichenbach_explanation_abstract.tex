@@ -1,0 +1,105 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[draft,12pt]{article}
+
+\usepackage{els}
+\usepackage{ii}
+\usepackage{mat2}
+\newcommand{\PRZL}{\citetitle{Reichenbach1928}\xspace}
+%\newcommand[\rzla]{\citep[#1]{Reichenbach1928}; tr.~\cite[041-2101, #2]{HR}}
+\newcommand{\crc}[2]{(\cite[#1]{Reichenbach1925}; tr.~\cite*[#2]{Reichenbach2006})}
+%\cite[#3]{Reichenbach1926a}; tr.~\cite*[#4]{Reichenbach2006}}
+%\cite[#3]{Reichenbach1924}; tr.~\cite*[#4]{Reichenbach1969}
+\newcommand{\crw}[2]{(\cite[#1]{Reichenbach1926a}; tr.~\cite*[#2]{Reichenbach2006})}
+
+\RenewDocumentCommand\qa{mmoo}{\blockquote[{\cite[#3]{Reichenbach1928}; tr.~\cite[041-2101, #4]{HR}}]{#1} \orig{#2}\xspace}
+\RenewDocumentCommand\qah{mmoo}{\blockquote[{\cite[#3]{Reichenbach1928}; tr.~\cite[041-2101, #4]{HR}}]{#1} \hide{#2}\xspace}
+
+\newcommand{\crz}[2]{(\cite[#1]{Reichenbach1928}; tr.~\cite*[#2]{Reichenbach1958})\xspace}
+%\NewDocumentCommand\qrz{mmoo}{\blockquote[{\cite[#3]{Reichenbach1928}; tr.~\cite*[#4]{Reichenbach1958}}]{#1} \orig{#2}\xspace}
+%\NewDocumentCommand\qrzh{mmoo}{\blockquote[{\cite[#3]{Reichenbach1928}; tr.~\cite*[#4]{Reichenbach1958}}]{#1} \hide{#2}\xspace}
+\NewDocumentCommand\qrw{mmoo}{\blockquote[{\cite[#3]{Reichenbach2006}; tr.~\cite*[#4]{Reichenbach1958}}]{#1} \orig{#2}\xspace}
+
+\NewDocumentCommand\qrwh{mmoo}{\blockquote[{\cite[#3]{Reichenbach1926a}; tr.~\cite*[#4]{Reichenbach2006}}]{#1} \hide{#2}\xspace}
+
+\NewDocumentCommand\qrc{mmoo}{\blockquote[({\cite[#3]{Reichenbach1925}; tr.~\cite*[#4]{Reichenbach2006}})]{#1} \orig{#2}\xspace}
+\NewDocumentCommand\qrch{mmoo}{\blockquote[{\cite[#3]{Reichenbach1925}; tr.~\cite*[#4]{Reichenbach2006}}]{#1} \hide{#2}\xspace}
+\NewDocumentCommand\qax{mmoo}{\blockquote[{\cite[#3]{Reichenbach1925}; tr.~\cite*[#4]{Reichenbach1969}}]{#1} \orig{#2}\xspace}
+\NewDocumentCommand\qaxh{mmoo}{\blockquote[{\cite[#3]{Reichenbach1924}; tr.~\cite*[#4]{Reichenbach1969}}]{#1} \hide{#2}\xspace}
+\NewDocumentCommand\lK{mm}{\ensuremath{l^{K{#1}}_{K{#2}}}}
+\NewDocumentCommand\LK{mm}{\ensuremath{L^{K{#1}}_{K{#2}}}}
+
+
+
+\renewcommand{\qrw}{\qrwh}
+\renewcommand{\qa}{\qah}
+\renewcommand{\qrc}{\qrch}
+\renewcommand{\qrz}{\qrzh}
+\renewcommand{\qax}{\qaxh}
+%\newcommand{\SN}{\cite{SN}}
+%\newcommand{\Ap}{Appendix\xspace}
+\renewcommand{\hr}[1]{HR 041-2101, #1\xspace}
+\renewcommand{\rzla}[2]{(\cite[#1]{Reichenbach1928}; tr.~\cite*[041-2101, #2]{HR})\xspace}
+\newcommand{\cax}[2]{(\cite[#1]{Reichenbach1924}; tr.~\cite*[#2]{Reichenbach1969})\xspace}
+\newcommand{\ra}[2]{(\cite[#1]{Reichenbach1924}; tr.~\cite*[#2]{Reichenbach1969})\xspace}
+\newcommand{\rc}[2]{(\cite[#1]{Reichenbach1925}; tr.~\cite*[#2]{Reichenbach2006})\xspace}
+\newcommand{\rw}[2]{(\cite[#1]{Reichenbach1926a}; tr.~\cite*[#2]{Reichenbach2006})\xspace}
+\renewcommand{\rzl}[2]{(\cite[#1]{Reichenbach1928}; tr.~\cite*[#2]{Reichenbach1958})\xspace}
+\renewcommand{\theequation}{\roman{equation}}
+\begin{document}
+
+\title{Reichenbach's Axiomatic and the Prehistory of the Dynamical Approach to Special Relativity}
+\maketitle
+
+\newcommand{\rhp}[2]{(\cite[#1]{Reichenbach1920a}; tr.\ \citeyear{Reichenbach1969} #2)\xspace}
+
+\newcommand{\wpo}{worldpoint\xspace}
+%\begin{abstract}
+%In 1925 Reichenbach, by reacting to the positive result of Miller's ether-drift experiments, introduced a distinction between two types of rod contraction in \sr: a kinematical \scare{Einstein contraction}, which depends on the definition of simultaneity, and a dynamical \scare{Lorentz contraction}. He argued that although both contractions happen to amount to the same Lorentz factor, they are conceptually different. In Reichenbach's view, only the \scare{Lorentz contraction} is at stake in the Michelson-Morley experiment. The arm of Michelson's interferometer is shorter than it would have been in classical mechanics in both Einstein and Lorentz's theories. In both theories, the Lorentz contraction requires an atomistic explanation based on a yet-unknown theory of matter. This paper concludes that Reichenbach's interpretation of \sr shares features of the current neo-Lorentzian interpretations.
+%\end{abstract}
+
+\begin{keywords}
+Hans Reichenbach \sep Lorentz Contraction \sep Special Relativity \sep Neo-Lorentzian Interpretation
+\end{keywords}
+
+\intro
+
+Harvey Brown and Michel Janseen are engaged in a dispute  This is the arrow of explanation debate in special relativity. about whether the symmetries of space-time explain the Lorentz invariance of dynamical laws or the Lorentz invariance of dynamical laws explains the symmetries of space-time. One the great to have refraimed in term fo confrmation (e.g. the between convetionalistm and), but in term of explation, is a radical with respect that have domianted was by logical empiricism. This paper, that this indeded, the first author to recast in term of explanatio was Hans Reichenbach, that should regarded as sort father of the dynalical as opposed to geometrical one.  This is already present in his 1924 \citetitle{Weyl1924} \citep{Weyl1924}, but it is probbale a 1925 article  A good opportunity to point to epxaon aout fas the alleged refutation of Michelson experiemnt by Miller 1970. The reust of the expeimernt were contested, but question could be addresed.: what would happen to special relativty if the Michelson-Morely expeormt was rejec,t that is when turent to be correct? 
+
+\section{Two Kinds of Contractions}
+
+\cop{Before addressing the question, Reichenbach made some remarks about the philosophical interpretation of \sr. Reichenbach warned his readers not to subscribe uncritically to a common interpretation of \sr}. In order to explain the negative result of the Michelson experiment, Lorentz made the \textit{ad hoc} assumption that one arm of the apparatus is \emph{contracted} by the amount $\sqrt{1- v^2/c^2}$ when it moves relative to the ether. The theoretical asymmetry between the ether frame and those moving with respect to it is hidden from observation by a sort of universal conspiracy of nature. Einstein, on the contrary, considered both arms \emph{equally long}, if measured at relative rest in the rest system, but one arm would appear contracted by the factor $\sqrt{1- v^2/c^2}$ if measured from a moving system. In this way, the theoretical symmetry between the rest and moving system is reestablished. This of course was the consequence of the fact that the definition of the simultaneity of distant clocks using light signals is frame dependent. As any length measurement requires that both ends of the rod be measured at the same time, two observers in relative motion refer to something different when they talk about the length of the arm of the apparatus.
+
+Reichenbach, however, explicitly rejected this standard interpretation. To avoid confusion, Reichenbach suggested that it is necessary to distinguish between. The \textit{Einstein contraction} depends on the relativity simultaneity and \qt{is related to the comparison of \emph{different magnitudes} within the \emph{same theory}}{zweier verschiedener Gr\"oßen, die derselben Theorie angehSren}\crc{44}{188}. The \textit{Lorentz contraction} is related to \qt{the behavior of the \emph{same magnitudes} according to \emph{different theories}}{Diese vergleicht die Verhaltungsweisen derselben Gr\"oße, wie sie sieh nach verschiedenen Theorien ergeben} \crc{45}{188} (the classical and relativistic proper length). According to Reichenbach, only the Lorentz contraction is at stake in the Michelson experiment, not the Einstein contraction: \qrc{It just happens that both contractions depend upon the same factor [\lf], and this is probably the reason why they are always confused with one another}{Diese beiden Verkfirzungen haben zuf\"allig denselben Faktor und dies ist wohl der Grund, warum man sie immer verwechselt hat}[46][189].
+
+
+
+
+\section{Two kinds of explaattions}
+
+%(1) Lorentz \textit{explains} this empirical fact by claiming that that the moving rod, because of its motion through the ether, \textit{must have} a \textit{shorter length} than the rest \scare{ether} rod by a factor \kappafactor. Einstein \textit{stipulates} that the moving and rest rod have the \textit{same length}, despite the fact the the moving rod \textit{as measured in the rest system} is shorter than a factor \kappafactor than the rest rod. 
+
+Both theories the Lorentz contraction, that is shorter than exectation by the classical theory, where the length of a moving segment was tacitly assumed to be identical with its length at rest. However, Lorentz theory is unsatisficy was \emph{bad explanation} of the Lorentz contraction, since there is no reaso to consider the classical behavior of rods as natural. Einstein was unsatisfying because he provided \textit{no explanation} at all, and simply declare by convention that relativistic rods are rigid. According to Reichenbach, the problem of explanation should not be simply \textit{circunvented} by adopting conventionalist stratagem, but addressed in a different form. One must not explain why measuring rods and clocks \textit{disagree} the classical light-geometry from, which we have no reason to considere natural. We have to explain why they all\textit{agree} with the relativistic light geometry and not with a different one. Paradozially Here Reichenach to resort to an idea by is oppnent Weyl. Already in his 1924 monograph \ra{70--71}{90-91} Reichenbach using Weyl's expression \emph{adjustment} as a good way to express this peculiar form of causality, to contrast to that of \emph{deflection} \origg{Abweichung}.
+
+%Already in his 1924 monograph \ra{70--71}{90-91} Reichenbach using Weyl's expression \emph{adjustment} as a good way to express this peculiar form of causality, to contrast to that of \emph{deflection}  As Reichenbach explains, \citet{Weyl1920a} had introduced the expression \scare{adjustment} to account for the surprising behavior of physical systems, such as atoms, that we use as rods and clocks. It cannot be a coincidence that atoms of the same type always have the same Bohr radius, independent of what happened to them in the past; this fact suggests that, each time, they \scare{adjust} anew to a certain equilibrium value, rather than \scare{preserve} it. 
+
+The analogy with \sr seems to be the following: \qt{\emph{Einstein}'s idea can be formulated as meaning that \emph{light geometry and matter geometry are identical}}{Der Gedanke dei \emph{Einsteins} l\"aßt sich dann dahin formulieren, \emph{daß Lichtgeometrie und K\"orpergeometrie identisch werden}} \cax{11}{14}. It is an odd coincidence that any physical system we use as a rod---whether it is made of steel, wood, etc.---always measures at equal lengths that are light-geometrically equal. \qt{Light is a much simpler physical object than a material rod, and, when searching for a relation between the two, it should be initially supposed that it would not correspond to so ideal a scheme as the posited matter axioms}{Licht ist ein physikalisch sehr viel elnfacheres Gebilde als ela materieller Stab, und wenn man einen Zusammenhang zwischen beiden sucht~ sollte man zunichst annehmen, dab er nicht einem so idealen Schema entspricht, wie es die K\"orperaxiome behaupten} \crc{47-48}{95}. This coincidence cries out for an explanation. However, the explanation should not account for the \emph{divergence} from an alleged correct behavior, but a for the \emph{convergence} toward a non-trivial one, that is that light and matter geometry agree
+\concl
+
+After Reichenbach clarified the distinction between Lorentz and Einstein contraction, he could proceed further to show what would happen if a Michelson-type experiment gave a positive result. As we have mentioned, in those years, raising this issue was more than just a mental exercise. If the experiment were rejected, this would only mean that \qt{rigid rods do not after all possess the preferred properties that Einstein still attributes to them}{daß die starren K\"orper doch nicht jene einfachen Vorzugseigenschaften besitzen, die Einstein ihnen immer noch l\"aßt} \crc{328}{203}. This reuslt is incoprated in 1926 finisehd, that incorpateds the smae result,andnexnted but recast only in term of Minkowsic.  
+
+
+%In Minkowski space-time the history of a uniformly moving unit rod is represented by a world-strip bounded by the parallel world-lines of the rod's endpoints. In the Lorentz-Einstein theory---keeping in mind that the points on the hyperbolas are at distance $1$ from $O$---the moving rod is represented by the narrower strip between the world-lines $OQ'$ and $S_1S'$; according to the classical theory it is represented by the wider strip between $OQ'$ and $SS'_2$. The Einstein contraction maintains that the moving rod $OS'=1$ looks shorter from the perspective of the rest frame ($OS_1$) than the proper length of the rod $OS=1$ (\lK{}{'}<\lK{}{}). The Lorentz contraction refers to the fact that the classical length $OS'_2$ would be longer than the relativistic proper length $OS'=1$, if both were measured in the same moving frame (\lK{'}{'}<\LK{'}{'}) \rzl{225}{195}.
+
+Howver, this That for Reichenbach a Minkowsk is only a graphical rapresenation and does not epxlaian, the Loretnz is a bad explaation, any \Mink is only a graphical rapresentation, geometrization does not add anything to result; the still that needs an epxation . The most improta how the content of the light- and matter-axioms can be \q{visualized geometrically} by the world- geometry of \Mink. Indeed, that makes clear that is metrogenic (slisine the smae rods), and that in teh same system shorted in the same frame. Howver, \Mink does that explation is needed. Once again, for Reichenbach, Weyl's expression \scare{adjustment} aptly expresses the need for an explanation, but it provides no details as to what it would look like. \qt{The answer can of course be given only by a detailed theory of matter, of which we have not the least idea}{Die Antwort kann nat\"{u}rlich nur eine ausgef\"{u}hrte Theorie der Materie geben, von der wir noch nicht die leiseste Vorstellung besitzen} \crz{233}{201\tm}.
+
+
+
+%That dynamical: that \emph{Explanans} theory of mater, for the rods contraction and clock retardaiton. However, has the advange  \emph{Explanandum}, not the Einstein contraction or retardation, but Lorentz contraction or retardation. In this way, that that indeed, a metrogenic or perspecival any, epxlaation, bu that requries an explantion. That light goemtry and matter gometry agree on the same \Mink geometry. 
+%
+%The paper that as clarification however, it alos shows it limits. Indeed, what whould this theory of matter. E..g that laws govering the field are Lorentz invariant, that the theory of matter. Indeed, there is any Lorentz invariant. That gometrucal exppaktion: is only the recasting of a the on ... Howver, that dynmocal explation. The paper clocules that by Marc Lagen an explaation by constraict. 
+
+\printshorthands
+\printbibliography
+%
+\end{document}
